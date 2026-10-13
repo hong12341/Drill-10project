@@ -50,8 +50,8 @@ class Ball:
     def update(self):
         self.frame = (self.frame +1)%1
         self.y -= random.randint(1, 50)
-        if self.y < 100:
-            self.y = 100
+        if self.y < 60:
+            self.y = 60
     def draw(self):
         self.image.clip_draw(self.frame*50, 0, 50, 50, self.x, self.y)
 
