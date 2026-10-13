@@ -54,21 +54,22 @@ class Ball:
             self.y = 60
     def draw(self):
         self.image.clip_draw(self.frame*50, 0, 50, 50, self.x, self.y)
+y = WINDOW_HEIGHT
 
 class Ball2:
     def __init__(self):
-        self.x = random.randint(0, 700)
+        self.x = random.randint(0, 800)
         self.y = 599
-        self.frame = random.randint(0, 7)
+        self.frame = random.randint(0,7)
         self.image = load_image('ball41x41.png')
     def update(self):
         self.frame = (self.frame +1)%1
-        self.y -= random.randint(1, 10)
+        self.y -= random.randint(1,10)
         if self.y < 100:
             self.y = 100
     def draw(self):
         self.image.clip_draw(self.frame*100, 0, 100, 100, self.x, self.y)
-
+        
 def handle_events():
     global running
     events = get_events()
