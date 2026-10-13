@@ -1,7 +1,8 @@
 from pico2d import *
 import random
 
-
+WINDOW_WIDTH = 800
+WINDOW_HEIGHT = 600
 # Game object class here
 
 #게임 객체 파악
