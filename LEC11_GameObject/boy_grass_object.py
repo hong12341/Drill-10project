@@ -50,7 +50,7 @@ class Ball:
         self.frame = (self.frame +1)%1
         self.y -= random.randint(1, 50)
     def draw(self):
-        self.image.clip_draw(self.frame*100, 0, 100, 100, self.x, self.y)
+        self.image.clip_draw(self.frame*50, 0, 50, 50, self.x, self.y)
 class Ball2:
     def __init__(self):
         self.x = random.randint(0, 700)
@@ -59,7 +59,7 @@ class Ball2:
         self.image = load_image('ball41x41.png')
     def update(self):
         self.frame = (self.frame +1)%1
-        self.y -= random.randint(1, 50)
+        self.y -= random.randint(1, 20)
     def draw(self):
         self.image.clip_draw(self.frame*100, 0, 100, 100, self.x, self.y)
 
